@@ -1,6 +1,7 @@
 # abderrahmane.elfarouah.github.io
 
 Abderrahmane EL FAROUAH (rqth) “Une fois sous terre on a la paix...” proverbes chinois
+
 Mes diplômes
 2018 PSC1
 
@@ -25,7 +26,9 @@ Septembre 2007/Juin 2009 BEP Métier du Secrétariat
 Septembre 2008/Juin 2009 Brevet des collèges série Professionnelle
 
  
-Mes compétences
+Mes centres d'interets
+
 le droit
 La télévision
 la science-fiction
+l'informatique
