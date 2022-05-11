@@ -11,7 +11,6 @@
                 <div class="lisere"></div>
       <header>
         <div class="banniere"></div>
-        <a href="rafikis.jpg"><img src="rafikis_mini.jpg" alt="Photo de profil rafiki" title="Cliquez pour agrandir"></a>
     <h1>Abderrahmane EL FAROUAH (rqth)</h1>  
     <h3><i>“Une fois sous terre on a la paix...” proverbes chinois</i> </h3>
     </header>
@@ -39,7 +38,7 @@
         </p>
             </div>
             <div class="competences">
-        <h2>Mes compétences</h2>
+        <h2>Centres d'intêret</h2>
         <p>
             <UL>
                 <li>le droit</li>
