@@ -1,4 +1,4 @@
-# abderrahmane.elfarouah.github.io
+# Curriculum vitae
 
 Abderrahmane EL FAROUAH (rqth) “Une fois sous terre on a la paix...” proverbes chinois
 
