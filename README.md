@@ -1,6 +1,4 @@
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-<div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="abderrahmaneelf" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/abderrahmaneelf?trk=profile-badge">Abderrahmane El Farouah</a></div>
-              
+            
 # Curriculum vitae
 <!DOCTYPE html>
 <html>
@@ -14,6 +12,7 @@
                 <div class="lisere"></div>
       <header>
         <div class="banniere"></div>
+        <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="abderrahmaneelf" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/abderrahmaneelf?trk=profile-badge">Abderrahmane El Farouah</a></div>
     <h1>Abderrahmane EL FAROUAH (rqth)</h1>  
     <h3><i>“Une fois sous terre on a la paix...” proverbes chinois</i> </h3>
     </header>
