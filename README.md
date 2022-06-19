@@ -1,8 +1,6 @@
             
 # Curriculum vitae
-<!DOCTYPE html>
 <html>
-<height: 100%>
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="cv.css" />  
