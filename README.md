@@ -1,4 +1,3 @@
-            
 # Curriculum vitae
 <html>
 <head>
