@@ -4,7 +4,8 @@
     <meta name=viewport content="width=device-width"/>
 </head>
 <BODY>
-    https://fr.linkedin.com/in/abderrahmaneelf?trk=profile-badge
+  <script type="text/javascript" src=" https://fr.linkedin.com/in/abderrahmaneelf?trk=profile-badge"></script>
+<script type="in/share" data-counter="top"></script>
       <header>
        <h1>Abderrahmane EL FAROUAH (rqth)</h1>
     <h3><i>“Une fois sous terre on a la paix...” proverbes chinois</i> </h3>
