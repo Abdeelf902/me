@@ -4,7 +4,7 @@
     <meta name=viewport content="width=device-width"/>
 </head>
 <BODY>
-  <script type="text/javascript" src=" https://fr.linkedin.com/in/abderrahmaneelf?trk=profile-badge"></script>
+  <script type="text/javascript" src="https://fr.linkedin.com/in/abderrahmaneelf?trk=profile-badge"> </script>
 <script type="in/share" data-counter="top"></script>
       <header>
        <h1>Abderrahmane EL FAROUAH (rqth)</h1>
