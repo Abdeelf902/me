@@ -4,7 +4,7 @@
     <meta name=viewport content="width=device-width"/>
 </head>
 <BODY>
-<a <script src="https://www.linkedin.com/autofill/js/autofill.js" type="text/javascript" async></script><script type="IN/Form2"></script> href="votre lien de redirection" class="bouton1">Le text qui apparaitra sur le bouton</a>
+<a <script src="www.linkedin.com/in/abderrahmaneelfarouah" class="bouton1">My LinkedIn</a>
       <header>
        <h1>Abderrahmane EL FAROUAH (rqth)</h1>
     <h3><i>“Une fois sous terre on a la paix...” proverbes chinois</i> </h3>
