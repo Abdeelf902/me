@@ -7,6 +7,8 @@
       <header>
        <h1>Abderrahmane EL FAROUAH (rqth)</h1>
     <h3><i>“Une fois sous terre on a la paix...” proverbes chinois</i> </h3>
+            <a href="www.linkedin.com/in/AbderrahmaneElfarouah" class="bouton1">MyLinkedIn</a>
+
     </header>
 <SECTION>
     <div id="conteneur"></div>
