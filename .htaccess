@@ -1,3 +1,0 @@
-Options +FollowSymlinks
-RewriteEngine on
-RewriteRule ^/abderrahmane.elfarouah/ (  cv.html [L]
