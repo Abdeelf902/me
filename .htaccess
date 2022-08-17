@@ -1,3 +1,3 @@
 Options +FollowSymlinks
 RewriteEngine on
-RewriteRule ^/abderrahmane.elfarouah.github.io/ (  /test/test.html [L]
+RewriteRule ^/abderrahmane.elfarouah.github.io/ (  cv.html [L]
