@@ -40,21 +40,7 @@
 	#formation table tr:nth-child(2n) td {
 		padding-bottom: 1em;
 		/* 16px */
-	}
-	/* bloc photo + adresseet divers */
-	/* DEPLACE DANS LE fichier cvpc.css#civil, #divers {float:right;width: 24%;background-color: blue;color:white;padding: .5em0.8% ;}*/
-	/* pas de triangles pour détails à la demande */
-	/* DEPLACE DANS LE fichier cvpc.css#expe h1>img, #divers h2>img {display:none;}*/
-	/* CIVIL------------------------------------- */
-	/* photo identité */
-	#civil>img {
-		display: block;
-		width: 95%;
-		margin: auto;
-		border: 3px solid white;
-		border-radius: 5px;
-	}
-	/* adresse de la personne */
+	
 	#civil p {
 		margin: 0.3em 0px;
 		/* 5px/16px 0px; */
