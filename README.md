@@ -9,9 +9,9 @@
        <h1>Abderrahmane EL FAROUAH (rqth)</h1>
     <h3><i>“Une fois sous terre on a la paix...” proverbes chinois</i> </h3>
     </header>
- <form action="[(https://github.com/Abdeelf902/chifoumi)](https://github.com/Abdeelf902/chifoumi)">
+ <form action=(https://github.com/Abdeelf902/chifoumi)">
 
-    <input type="submit" value="Nouveau client" />
+    <input type="submit" value="portfolio" />
 
 </form>
 <SECTION>
