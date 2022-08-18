@@ -2,7 +2,7 @@
 
 
 /* CSS */
-.button {
+button {
   appearance: button;
   background-color: #1899D6;
   border: solid transparent;
