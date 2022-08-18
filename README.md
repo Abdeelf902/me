@@ -9,7 +9,7 @@
        <h1>Abderrahmane EL FAROUAH (rqth)</h1>
     <h3><i>“Une fois sous terre on a la paix...” proverbes chinois</i> </h3>
     </header>
-   <button onclick="window.location.href='https://github.com/Abdeelf902/chifoumi">Click</button>
+   <button href='https://github.com/Abdeelf902/chifoumi">
 <SECTION>
     <div id="conteneur"></div>
         <div class="diplome">
