@@ -1,8 +1,8 @@
 <!-- HTML !-->
-<button class="button-19" role="button">Button 19</button>
+
 
 /* CSS */
-.button-19 {
+.button {
   appearance: button;
   background-color: #1899D6;
   border: solid transparent;
