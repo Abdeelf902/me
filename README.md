@@ -5,7 +5,12 @@
 </head>
 <BODY>
       <header>       
-          <a href="https://www.linkedin.com/in/abderrahmaneelfarouah" class="bouton1">MyLinkedIn</a>
+          <a padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%; href="https://www.linkedin.com/in/abderrahmaneelfarouah" class="bouton1">MyLinkedIn</a>
        <h1>Abderrahmane EL FAROUAH (rqth)</h1>
     <h3><i>“Une fois sous terre on a la paix...” proverbes chinois</i> </h3>
     </header>
