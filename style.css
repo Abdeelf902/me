@@ -29,7 +29,7 @@ header {
 }
 
 .nav-list .menu-icon {
-    display: none;
+    display: block;
     cursor: pointer;
     font-size: 24px;
 }
@@ -47,7 +47,7 @@ header {
     z-index: 1;
 }
 
-.nav-list:hover .sub-menu {
+.nav-list.active .sub-menu {
     display: block;
 }
 
@@ -104,9 +104,7 @@ a:hover {
         text-align: left;
     }
 
-    .nav-list:hover .sub-menu {
-        display: none;
+    .nav-list.active .sub-menu {
+        display: block;
     }
 }
-
-
