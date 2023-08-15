@@ -23,14 +23,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 20px;
     font-size: 16px;
     list-style-type: none;
 }
 
-.nav-list li {
-    margin-right: 20px;
+.nav-list .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
 }
+
 
 /* Optional: Add hover effect */
 .nav-list li a {
@@ -75,11 +78,38 @@ a {
 @media screen and (max-width: 768px) {
     .nav-list {
         flex-direction: column;
+        text-align: center;
+        position: relative;
     }
+
+    .nav-list .menu-icon {
+        display: block;
+    }
+
+    .nav-list ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-align: left;
+        z-index: 1;
+    }
+
     .nav-list li {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin: 0;
+    }
+
+    .nav-list li a {
+        display: block;
+        padding: 10px 20px;
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .nav-list ul.active {
+        display: block;
     }
 }
-
-
