@@ -4,10 +4,13 @@ body, h1, h2, ul {
     padding: 0;
 }
 
-/* Set a background color and font styles */
+/* Set a background image */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-image: url("fire.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2080px 4060px;
     line-height: 1.6;
 }
 
@@ -34,47 +37,6 @@ header {
     font-size: 24px;
 }
 
-
-/* Optional: Add hover effect */
-.nav-list li a {
-    color: #007bff;
-    transition: color 0.3s;
-}
-
-.nav-list li a:hover {
-    text-decoration: underline;
-    color: #0056b3;
-}
-
-/* Content section styling */
-section {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-top: 20px;
-}
-
-/* Styling for diplomas, formation, and centers of interest */
-.Diplome, .formation, .competences {
-    margin-bottom: 20px;
-}
-
-/* Strong text styling */
-strong {
-    font-weight: bold;
-}
-
-/* Link styling */
-a {
-    text-decoration: none;
-    color: #007bff;
-    transition: color 0.3s;
-}
-
-}
-
-/* Responsive layout adjustments */
 @media screen and (max-width: 768px) {
     .nav-list {
         flex-direction: column;
@@ -113,3 +75,36 @@ a {
         display: block;
     }
 }
+
+/* Content section styling */
+section {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Styling for diplomas, formation, and centers of interest */
+.Diplome, .formation, .competences {
+    margin-bottom: 20px;
+}
+
+/* Strong text styling */
+strong {
+    font-weight: bold;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
