@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Curriculum Vitae - Abderrahmane EL FAROUAH</title>
+    <title Curriculum Vitae - Abderrahmane EL FAROUAH</title>
 </head>
 <body>
     <header>
-        <nav>
+        <button>
             <a href="https://abdeelf902.github.io/chifoumi/">Jeux JS</a>
             <a href="https://www.linkedin.com/in/abderrahmaneelfarouah" class="bouton1">My LinkedIn</a>
-        </nav>
+        </button>
         <h1>Abderrahmane EL FAROUAH (rqth)</h1>
     </header>
     <section>
