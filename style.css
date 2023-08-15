@@ -23,6 +23,7 @@ header {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 0;
     font-size: 16px;
 }
@@ -54,15 +55,17 @@ strong {
 a {
     text-decoration: none;
     color: #007bff;
+    transition: color 0.3s;
 }
 
 /* Hover effect for links */
 a:hover {
     text-decoration: underline;
+    color: #0056b3;
 }
 
 /* Responsive layout adjustments */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .nav-list {
         flex-direction: column;
     }
@@ -71,4 +74,5 @@ a:hover {
         margin-bottom: 10px;
     }
 }
+
 
