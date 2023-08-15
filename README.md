@@ -1,50 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name=viewport content="width=device-width"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Curriculum Vitae - Abderrahmane EL FAROUAH</title>
 </head>
-<BODY>
-      <header>       
-          <a class="fa fa-linkedin" href="https://www.linkedin.com/in/abderrahmaneelfarouah" class="fa fa-linkedin">MyLinkedIn</a>
-       <h1>Abderrahmane EL FAROUAH (rqth)</h1>
-    <h3><i>“Une fois sous terre on a la paix...” proverbes chinois</i> </h3>
+<body>
+    <header>
+        <nav>
+            <a href="https://abdeelf902.github.io/chifoumi/">Jeux JS</a>
+            <a href="https://www.linkedin.com/in/abderrahmaneelfarouah" class="bouton1">My LinkedIn</a>
+        </nav>
+        <h1>Abderrahmane EL FAROUAH (rqth)</h1>
     </header>
- <a href="https://github.com/Abdeelf902/chifoumi"</a>
-
-
-</form>
-<SECTION>
-    <div id="conteneur"></div>
-        <div class="diplome">
-    <h2>Mes diplômes</h2>
-    <p>
-        <p><strong>2018</strong>                           PSC1</p>
-        <p><strong>2014</strong>                           BAFA</p>
-        <p><strong>2011</strong>                           Baccalauréat Professionnel Secrétariat</p>
-        <p><strong>2009</strong>                           BEP Métier du Secrétariat</P>
-        <p><strong>2018</strong>                           Brevet des collèges série Professionnelle</p>
-        </p>
+    <section>
+        <div class="Diplome">
+            <h2>Mes diplômes</h2>
+            <ul>
+                <li><strong>2018</strong> - PSC1</li>
+                <li><strong>2014</strong> - BAFA</li>
+                <li><strong>2011</strong> - Baccalauréat Professionnel Secrétariat</li>
+                <li><strong>2009</strong> - BEP Métier du Secrétariat</li>
+                <li><strong>2018</strong> - Brevet des collèges série Professionnelle</li>
+            </ul>
         </div>
-            <div class="formation">
-        <h2>Ma formation</h2>
-        <p>
-            <P><strong>Juin 2013/Décembre 2013</strong>        BAFA</P>
-            <P><strong>Septembre 2011/Juin 2013</strong>       BTS Notariat</P>
-            <P><strong>Septembre 2009/Juin 2011</strong>       Baccalauréat Professionnel Secrétariat</P>
-            <P><strong>Septembre 2007/Juin 2009</strong>       BEP Métier du Secrétariat</P>
-            <P><strong>Septembre 2008/Juin 2009</strong>       Brevet des collèges série Professionnelle</P>
-        </p>
-            </div>
-            <div class="Loisirs">
-        <h2>Mes Loisirs</h2>
-        <p>
-            <UL>
-                <li>le droit</li>
+        <div class="formation">
+            <h2>Ma formation</h2>
+            <ul>
+                <li><strong>Juin 2013/Décembre 2013</strong> - BAFA</li>
+                <li><strong>Septembre 2011/Juin 2013</strong> - BTS Notariat</li>
+                <li><strong>Septembre 2009/Juin 2011</strong> - Baccalauréat Professionnel Secrétariat</li>
+                <li><strong>Septembre 2007/Juin 2009</strong> - BEP Métier du Secrétariat</li>
+                <li><strong>Septembre 2008/Juin 2009</strong> - Brevet des collèges série Professionnelle</li>
+            </ul>
+        </div>
+        <div class="competences">
+            <h2>Mes centres d'intérêt</h2>
+            <ul>
+                <li>Le droit</li>
                 <li>La télévision</li>
-                <li>la science-fiction</li>
-            </UL>
-        </p>
-                </div>
-    </SECTION>
-    </BODY>
-        </html>
+                <li>La science-fiction</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
+
