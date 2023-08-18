@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^me/(.*)$ ma_presentation/$1 [R=301,L]
