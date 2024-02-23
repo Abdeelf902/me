@@ -2,14 +2,14 @@ body {
     font-family: 'arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8; /* Set a background color for the entire page */
+    background-color: #f8f8f8;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #333; /* Set a background color for the header */
-    color: #fff; /* Set font color for the header text */
+    background-color: #333;
+    color: #fff;
 }
 
 h1 {
@@ -30,11 +30,12 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff; /* Set font color for the navigation links */
+    color: #fff;
+    padding: 10px;
 }
 
 nav a:hover {
-    text-decoration: underline; /* Underline the links on hover */
+    background-color: #555;
 }
 
 section {
@@ -55,18 +56,10 @@ li {
     margin-bottom: 8px;
 }
 
-/* Additional styles for links in the section */
 a {
     color: #007bff;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-
-}
-
-strong {
-    font-weight: bold;
 }
