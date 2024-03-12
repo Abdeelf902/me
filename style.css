@@ -24,9 +24,7 @@ nav ul li a {
 }
 
 /* Styles pour le bouton du menu */
-#subMenuTrigger {
-    color: #fff;
-    text-decoration: none;
+.menu-icon {
     cursor: pointer;
 }
 
