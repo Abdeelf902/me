@@ -65,18 +65,8 @@ label[for="toggle"] {
     color: #fff;
 }
 
-/* Sub-menu */
-.sub-menu {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    padding: 10px;
-    top: 100%;
-    left: 0;
-}
-
 /* Afficher le sous-menu lorsque l'input est coché */
-#toggle:checked + label + .sub-menu {
+#toggle:checked ~ .sub-menu {
     display: block;
 }
 
