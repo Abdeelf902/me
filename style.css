@@ -1,65 +1,91 @@
-body {
-    font-family: 'arial', sans-serif;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    box-sizing: border-box;
 }
 
-header {
-    text-align: center;
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
     padding: 20px;
+}
+
+/* Header */
+header {
     background-color: #333;
     color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 h1 {
-    font-size: 2em;
-    margin: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-nav li {
-    display: inline-block;
+nav ul li {
+    display: inline;
     margin-right: 20px;
 }
 
-nav a {
-    text-decoration: none;
+nav ul li a {
     color: #fff;
-    padding: 10px;
+    text-decoration: none;
 }
 
-nav a:hover {
-    background-color: #555;
-}
-
+/* Section */
 section {
-    padding: 20px;
     background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
 }
 
+/* Sub-sections */
 h2 {
-    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 ul {
     list-style: none;
-    padding: 0;
 }
 
-li {
-    margin-bottom: 8px;
+ul li {
+    margin-bottom: 5px;
 }
 
-a {
-    color: #007bff;
-}
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
 
-a:hover {
-    text-decoration: underline;
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        margin-bottom: 10px;
+    }
 }
