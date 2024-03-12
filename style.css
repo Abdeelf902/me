@@ -1,36 +1,8 @@
-/* Styles pour la navigation */
-nav ul {
-    list-style: none;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Styles pour le sous-menu */
-.sub-menu {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    padding: 10px;
-}
-
-/* Styles pour le bouton du menu */
-.menu-icon {
-    cursor: pointer;
-}
-
-/* Sous-menu affiché lorsqu'il est ouvert */
-.sub-menu.active {
-    display: block;
+    box-sizing: border-box;
 }
 
 /* Styles généraux */
@@ -46,6 +18,7 @@ body {
     padding: 20px;
 }
 
+/* Header */
 header {
     background-color: #333;
     color: #fff;
@@ -58,13 +31,48 @@ h1 {
     margin-bottom: 10px;
 }
 
-section {
-    background-color: #fff;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 5px;
+/* Navigation */
+nav ul {
+    list-style: none;
 }
 
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sous-menu masqué par défaut */
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Styles pour le bouton du menu */
+#subMenuTrigger {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Afficher le sous-menu lorsqu'on survole ou clique sur le bouton du menu */
+.menu-icon:hover .sub-menu,
+.menu-icon:focus .sub-menu {
+    display: block;
+}
+
+/* Sub-menu displayed when it's opened */
+.sub-menu.active {
+    display: block;
+}
+
+/* Sub-sections */
 h2 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -76,24 +84,4 @@ ul {
 
 ul li {
     margin-bottom: 5px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    header {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 0;
-        margin-bottom: 10px;
-    }
 }
