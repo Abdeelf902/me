@@ -32,12 +32,18 @@ h1 {
 }
 
 /* Navigation */
+nav {
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 
@@ -46,29 +52,31 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Sous-menu masqué par défaut */
+/* Styles for the menu button */
+#toggle {
+    display: none;
+}
+
+label[for="toggle"] {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Sub-menu */
 .sub-menu {
     display: none;
     position: absolute;
     background-color: #333;
     padding: 10px;
+    top: 100%;
+    left: 0;
 }
 
-/* Styles pour le bouton du menu */
-#subMenuTrigger {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Afficher le sous-menu lorsqu'on survole ou clique sur le bouton du menu */
-.menu-icon:hover .sub-menu,
-.menu-icon:focus .sub-menu {
-    display: block;
-}
-
-/* Sub-menu displayed when it's opened */
-.sub-menu.active {
+/* Afficher le sous-menu lorsque l'input est coché */
+#toggle:checked + label + .sub-menu {
     display: block;
 }
 
