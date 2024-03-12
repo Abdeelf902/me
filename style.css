@@ -1,8 +1,38 @@
-/* Reset CSS */
-* {
+/* Styles pour la navigation */
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styles pour le sous-menu */
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Styles pour le bouton du menu */
+#subMenuTrigger {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Sous-menu affiché lorsqu'il est ouvert */
+.sub-menu.active {
+    display: block;
 }
 
 /* Styles généraux */
@@ -18,7 +48,6 @@ body {
     padding: 20px;
 }
 
-/* Header */
 header {
     background-color: #333;
     color: #fff;
@@ -31,22 +60,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Navigation */
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Section */
 section {
     background-color: #fff;
     margin-top: 20px;
@@ -54,7 +67,6 @@ section {
     border-radius: 5px;
 }
 
-/* Sub-sections */
 h2 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -68,10 +80,8 @@ ul li {
     margin-bottom: 5px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .container {
-        max-width: 100%;
         padding: 10px;
     }
 
