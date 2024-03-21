@@ -11,6 +11,15 @@ header {
   padding: 20px;
   text-align: center;
 }
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge-base {
+  margin-right: 20px;
+}
 
 .liseret-titre {
   margin: 0;
