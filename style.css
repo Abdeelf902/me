@@ -1,11 +1,13 @@
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  color: #495057;
+  background-color: #f7f7f7;
 }
 
 header {
-  background-color: #ddd;
+  background-color: #f7f7f7;
   padding: 20px;
   text-align: center;
 }
@@ -13,15 +15,18 @@ header {
 h1, h2 {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
+  color: #212529;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin-top: 10px;
+  color: #212529;
 }
 
 .contact {
@@ -37,17 +42,19 @@ h2 {
 
 .contact a {
   text-decoration: none;
-  color: black;
+  color: #0077b5;
 }
 
 section {
   margin: 20px 0;
   padding: 20px;
   border: 1px solid #ddd;
+  border-color: #f7f7f7;
 }
 
 h2.competences, h2.experiences, h2.formations {
   margin-bottom: 15px;
+  color: #212529;
 }
 
 ul {
@@ -62,11 +69,11 @@ li {
 /* Responsive design pour les écrans mobiles */
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
   h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   .contact {
@@ -75,6 +82,10 @@ li {
 
   section {
     margin: 10px 0;
+  }
+
+  section:not(:first-child) {
+    border-top: none;
   }
 }
 
