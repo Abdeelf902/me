@@ -1,62 +1,39 @@
-/* Your existing CSS */
-body {
-  font-family: "Roboto", sans-serif;
+/* Reset CSS */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: "Roboto", sans-serif;
   color: #495057;
   background-color: #f7f7f7;
 }
 
+/* Header styles */
 header {
   background-color: #f7f7f7;
   padding: 20px;
   text-align: center;
 }
+
+/* Flex container */
 .flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.badge-base {
-  margin-right: 20px;
-}
-
-.liseret-titre {
-  margin: 0;
-  padding: 0;
-  font-size: 1.8em;
-  color: #212529;
-  display: inline-block;
-  margin-left: -3px;
-  margin-top: 5px;
-}
-
-h1, h2 {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-size: 2.5em;
-  color: #0077b5; /* Consider keeping consistent color for headings */
-}
-
-h2 {
-  font-size: 1.8em;
-  margin-top: 10px;
-  color: #212529;
-}
-
+/* Contact styles */
 .contact {
   list-style: none;
-  padding: 0;
-  margin: 10px auto;
+  display: flex;
+  align-items: center;
 }
 
 .contact li {
-  display: inline-block;
   margin-right: 20px;
 }
 
@@ -65,29 +42,32 @@ h2 {
   color: #0077b5;
 }
 
+/* Title styles */
+h1 {
+  font-size: 2.5em;
+  color: #0077b5;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 10px;
+}
+
+/* Section styles */
 section {
   margin: 20px 0;
   padding: 20px;
-  /* Consider removing border or setting it explicitly to #f7f7f7 */
   border: 1px solid #ddd;
   border-color: #f7f7f7;
 }
 
-h2.competences, h2.experiences, h2.formations {
-  margin-bottom: 15px;
-  color: #212529;
-}
-
+/* List styles */
 ul {
-  list-style: none;
   padding: 0;
 }
 
-li {
-  margin-bottom: 5px;
-}
-
-/* Responsive design for the mobile screens */
+/* Responsive styles */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 1.8em;
@@ -98,14 +78,11 @@ li {
   }
 
   .contact {
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  section {
-    margin: 10px 0;
-  }
-
-  section:not(:first-child) {
-    border-top: none;
+  .contact li {
+    margin: 5px 0;
   }
 }
