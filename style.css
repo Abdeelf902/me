@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   background-color: #f7f7f7;
 }
 
 /* Global styles */
 body {
   font-family: "Roboto", sans-serif;
   color: #495057;
-  background-color: #f7f7f7;
+ background-color: #f7f7f7;
 }
 
 /* Header styles */
