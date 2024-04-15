@@ -1,11 +1,11 @@
-/* Reset CSS */
+/* Reset default browser styles */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body styles */
+/* Global styles */
 body {
   font-family: "Roboto", sans-serif;
   color: #495057;
@@ -17,36 +17,18 @@ header {
   background-color: #f7f7f7;
   padding: 20px;
   text-align: center;
-}
-
-/* Flex container */
-.flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Contact styles */
-.contact {
-  list-style: none;
-  display: flex;
-  align-items: center;
+h1, h2 {
+  margin: 0;
 }
 
-.contact li {
-  margin-right: 20px;
-}
-
-.contact a {
-  text-decoration: none;
-  color: #0077b5;
-}
-
-/* Title styles */
 h1 {
   font-size: 2.5em;
   color: #0077b5;
-  margin-top: 10px;
 }
 
 h2 {
@@ -54,7 +36,28 @@ h2 {
   margin-top: 10px;
 }
 
-/* Section styles */
+ul.contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+ul.contact li {
+  margin-right: 20px;
+}
+
+ul.contact li:last-child {
+  margin-right: 0;
+}
+
+ul.contact li a {
+  text-decoration: none;
+  color: #0077b5;
+}
+
+/* Main sections styles */
 section {
   margin: 20px 0;
   padding: 20px;
@@ -62,12 +65,23 @@ section {
   border-color: #f7f7f7;
 }
 
-/* List styles */
-ul {
+h2.liseret-titre {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8em;
+  color: #212529;
+}
+
+section ul {
+  list-style: none;
   padding: 0;
 }
 
-/* Responsive styles */
+section ul li {
+  margin-bottom: 5px;
+}
+
+/* Responsive design */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 1.8em;
@@ -77,12 +91,18 @@ ul {
     font-size: 1.5em;
   }
 
-  .contact {
+  ul.contact {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
-  .contact li {
-    margin: 5px 0;
+  ul.contact li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  section {
+    margin: 10px 0;
   }
 }
+
