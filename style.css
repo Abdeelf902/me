@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 .hero-section {
-    height: 100vh;
+    height: 42vh;
     background: linear-gradient(to right, #667eea, #764ba2);
     color: #fff;
     display: flex;
