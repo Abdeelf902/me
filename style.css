@@ -73,14 +73,14 @@ section {
 
 .competences ul,
 .skills-list,
-.experiences-et-formations-professionnelles ul {
+.experiences-et-formations ul {
     list-style: none;
     padding: 0;
 }
 
 .competences li,
 .skills-list li,
-.experiences-et-formations-professionnelles li {
+.experiences-et-formations li {
     margin-bottom: 1rem;
 }
 
@@ -91,7 +91,7 @@ section {
 }
 
 .project-card {
-    background-color: #f4f4f4;
+    background-color: #eaeaea;
     padding: 1.5rem;
     border-radius: 5px;
     width: calc(50% - 2rem);
