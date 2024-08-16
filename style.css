@@ -6,6 +6,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -63,10 +64,24 @@ nav ul li a {
     border-radius: 5px;
 }
 
-.about-section, .projects-section, .skills-section, .contact-section, .competences, .experiences-et-formations-professionnelles, .diplomes {
+section {
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #fff;
+}
+
+.competences ul,
+.skills-list,
+.experiences-et-formations-professionnelles ul {
+    list-style: none;
+    padding: 0;
+}
+
+.competences li,
+.skills-list li,
+.experiences-et-formations-professionnelles li {
+    margin-bottom: 1rem;
 }
 
 .projects-grid {
@@ -86,17 +101,13 @@ nav ul li a {
     margin-top: 0;
 }
 
-.skills-list {
-    list-style: none;
-    padding: 0;
-}
-
 .skills-list li {
     display: inline-block;
     margin-right: 1rem;
 }
 
-.contact-section p, .contact-section form {
+.contact-section p,
+.contact-section form {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -106,7 +117,8 @@ nav ul li a {
     margin-top: 1rem;
 }
 
-.contact-section form input, .contact-section form textarea {
+.contact-section form input,
+.contact-section form textarea {
     width: 100%;
     padding: 0.5rem;
     margin-top: 0.5rem;
