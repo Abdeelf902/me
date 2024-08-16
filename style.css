@@ -1,107 +1,120 @@
-/* Reset default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-   background-color: #f7f7f7;
-}
+/* style.css */
 
-/* Global styles */
+/* General Styles */
 body {
-  font-family: "Roboto", sans-serif;
-  color: #495057;
- background-color: #f7f7f7;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-/* Header styles */
 header {
-  background-color: #f7f7f7;
-  padding: 20px;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-h1, h2 {
-  margin: 0;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-  font-size: 2.5em;
-  color: #0077b5;
+nav ul li {
+    margin: 0 1rem;
 }
 
-h2 {
-  font-size: 1.8em;
-  margin-top: 10px;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-ul.contact {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-ul.contact li {
-  display: block; /* Display the list items as block elements */
-  margin-bottom: 10px; /* Add margin between list items */
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-ul.contact li:last-child {
-  margin-right: 0;
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
-ul.contact li a {
-  text-decoration: none;
-  color: #0077b5;
+.btn {
+    background-color: #fff;
+    color: #333;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-/* Main sections styles */
-section {
-  margin: 20px 0;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-color: #f7f7f7;
+.about-section, .projects-section, .skills-section, .contact-section, .competences, .experiences-et-formations-professionnelles, .diplomes {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-h2.liseret-titre {
-  margin: 0;
-  padding: 0;
-  font-size: 1.8em;
-  color: #212529;
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-section ul {
-  list-style: none;
-  padding: 0;
+.project-card {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 5px;
+    width: calc(50% - 2rem);
 }
 
-section ul li {
-  margin-bottom: 5px;
+.project-card h3 {
+    margin-top: 0;
 }
 
-/* Responsive design */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 1.8em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  ul.contact {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  ul.contact li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  section {
-    margin: 10px 0;
-  }
+.skills-list {
+    list-style: none;
+    padding: 0;
 }
 
+.skills-list li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.contact-section p, .contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.contact-section form input, .contact-section form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
