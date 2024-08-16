@@ -106,19 +106,17 @@ section {
     margin-right: 1rem;
 }
 
-.contact-section p,
-.contact-section form {
+.contact-section p,{
     max-width: 600px;
     margin: 0 auto;
 }
 
-.contact-section form label {
+.contact-section {
     display: block;
     margin-top: 1rem;
 }
 
-.contact-section form input,
-.contact-section form textarea {
+.contact-section {
     width: 100%;
     padding: 0.5rem;
     margin-top: 0.5rem;
