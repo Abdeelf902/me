@@ -8,8 +8,17 @@
 </head>
 <body>
   <header class="flex-container">
-    <!-- LinkedIn profile badge -->
-<div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="abderrahmaneelfarouah" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/abderrahmaneelfarouah?trk=profile-badge">Abderrahmane El Farouah🦽</a></div>    <!-- Personal information -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="abderrahmaneelfarouah" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/abderrahmaneelfarouah?trk=profile-badge">Abderrahmane El Farouah🦽</a></div>    
+    <!-- Personal information -->
     <div>
       <h1>Abderrahmane El Farouah (RQTH)</h1>
       <h2>Développeur AS 400 rpg</h2>
@@ -22,6 +31,19 @@
     </ul>
   </header>
 
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Abderrahmane El Farouah</h1>
+      <p>AS 400 RPG Developer</p>
+      <a href="#projects" class="btn">View My Projects</a>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>I am a skilled AS 400 RPG Developer with experience in HTML5, CSS3, JavaScript, PHP, and more. Passionate about creating efficient and scalable software solutions.</p>
+  </section>
+
   <section class="competences liseret">
     <h2 class="liseret-titre">Compétences professionnelles</h2>
     <ul>
@@ -32,6 +54,23 @@
       <li>Logiciels : Pack Office, EBP Comptabilité, EBP Gestion commerciale</li>
       <li>Softskills : Résilience, Esprit d'équipe, Créativité, Empathie, Curiosité, Management inclusif, Assertivité, Aisance relationnelle, Gestion des conflits</li>
     </ul>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Jeux du Chi Fu Mi.</p>
+        <a href="https://abdeelf902.github.io/chifoumi/" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>les 151 pokémons .</p>
+        <a href="https://abdeelf902.github.io/pokemon-discovery/" class="btn">View Project</a>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
   </section>
 
   <section class="experiences-et-formations-professionnelles">
@@ -70,6 +109,35 @@
     </ul>
   </section>
 
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>PHP</li>
+      <li>React.js</li>
+      <li>Angular</li>
+      <!-- Add more skills as needed -->
+    </ul>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:abderrahmane.elfarouah@laposte.net">abderrahmane.elfarouah@laposte.net</a></p>
+    <p>GitHub: <a href="https://github.com/Abdeelf902/">https://github.com/Abdeelf902/</a></p>
+    <p>LinkedIn: <a href="https://fr.linkedin.com/in/abderrahmaneelfarouah">LinkedIn Profile</a></p>
+    <form action="your_form_processing_url" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
   <section class="diplomes">
     <h2>Diplômes</h2>
     <ul>
@@ -80,7 +148,9 @@
       <li><strong>Brevet des collèges série professionnelle</strong> - 2008 </li>
     </ul>
   </section>
+
+  <footer>
+    <p>&copy; 2024 Abderrahmane El Farouah</p>
+  </footer>
 </body>
 </html>
-
-
