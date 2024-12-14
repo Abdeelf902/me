@@ -90,63 +90,59 @@ section {
 }
 /* Responsive Design */
 
-/* Tablettes */
-@media (max-width: 768px) { 
-    header {
-        padding: 0.5rem;
+/* Hamburger Button */
+.menu-toggle {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1100;
+}
+
+/* Navigation par défaut (desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile Navigation (hidden by default) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Affiche le bouton hamburger */
     }
 
-    nav ul {
+    .nav-links {
+        display: none; /* Cache la navigation */
         flex-direction: column;
-        align-items: center;
+        background-color: #333;
+        position: absolute;
+        top: 4rem; /* Sous le header */
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 0 0 5px 5px;
     }
 
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .hero-section img {
-        width: 120px;
-        height: 120px;
+    .nav-links li {
         margin-bottom: 1rem;
     }
 
-    .hero-content h1 {
-        font-size: 2rem;
+    .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
     }
 
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .hero-content .btn {
-        padding: 0.5rem 1.5rem;
-        font-size: 0.9rem;
-    }
-
-    section {
-        padding: 1.5rem 1rem;
-    }
-
-    .projects-grid {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .project-card {
-        width: 100%;
-    }
-
-    .skills-list li {
-        display: block;
-        margin-bottom: 0.5rem;
+    .nav-links.active {
+        display: flex; /* Affiche la navigation quand active */
     }
 }
 
