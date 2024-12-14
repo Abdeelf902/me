@@ -129,4 +129,15 @@
         <p>&copy; 2024 Abderrahmane El Farouah</p>
     </footer>
 </body>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active"); // Bascule la classe 'active'
+        });
+    });
+</script>
+
 </html>
