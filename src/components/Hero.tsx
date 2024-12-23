@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center text-center">
         <div className="mb-8">
           <img
-            src="cv2025-Photoroom.jpg"
+            src="../cv2025-Photoroom.jpg"
             alt="Abderrahmane El Farouah"
             className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg"
           />
@@ -17,12 +17,12 @@ export default function Hero() {
         </h1>
         
         <p className="text-xl text-gray-600 mb-8">
-          Développeur Web & AS 400
+          Développeur Web/AS 400
         </p>
         
         <div className="flex space-x-4 mb-8">
           <a
-            href="https://github.com/Abdeelf902/"
+            href="https://github.com/abderrahmaneelfarouah/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-gray-900 text-white hover:bg-gray-700 transition-colors"
