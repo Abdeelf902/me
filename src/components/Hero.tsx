@@ -1,5 +1,7 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { put } from "@vercel/blob";
 
+await put('articles/blob.txt', 'Hello World!', { access: 'public' });
 export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 pt-16">
