@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center text-center">
         <div className="mb-8">
          <img
-  src="./MY_PRESENTATION/cv2025-Photoroom.jpg"
+  src="/cv2025-Photoroom.jpg"
   alt="Abderrahmane El Farouah"
   className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg"
 />
