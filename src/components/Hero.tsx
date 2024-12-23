@@ -5,8 +5,7 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center text-center">
         <div className="mb-8">
-          <img
-            src="../cv2025-Photoroom.jpg"
+        <img  src="https://github.com/abdeelfarouah/my_presentation/blob/Master/cv2025-Photoroom.jpg?raw=true" data-hpc="true" 
             alt="Abderrahmane El Farouah"
             className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg"
           />
