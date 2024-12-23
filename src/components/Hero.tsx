@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center text-center">
         <div className="mb-8">
          <img
-  src="/https://ludogildq8s3djil.public.blob.vercel-storage.com/cv2025-Photoroom-aY1edINZOjOE6KQVyBZX3vzEjpXVoL.jpg"
+  src="https://ludogildq8s3djil.public.blob.vercel-storage.com/cv2025-Photoroom-aY1edINZOjOE6KQVyBZX3vzEjpXVoL.jpg"
   alt="Abderrahmane El Farouah"
   className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg"
 />
