@@ -5,14 +5,14 @@ const projects = [
     title: 'Chi Fu Mi',
     description: 'Un jeu classique de pierre-papier-ciseaux développé avec JavaScript.',
     link: 'https://abdeelfarouah.github.io/chifoumi/',
-    github: 'https://github.com/Abdeelf902/chifoumi',
+    github: 'https://github.com/abdeelfarouah/chifoumi',
     image: 'https://images.unsplash.com/photo-1612404730960-5c71577fca11?auto=format&fit=crop&q=80&w=800&h=500',
   },
   {
     title: 'Pokédex',
     description: 'Une application web présentant les 151 premiers Pokémon avec leurs caractéristiques.',
     link: 'https://abdeelfarouah.github.io/pokemon-discovery/',
-    github: 'https://github.com/Abdeelf902/pokemon-discovery',
+    github: 'https://github.com/abdeelfarouah/pokemon-discovery',
     image: 'https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?auto=format&fit=crop&q=80&w=800&h=500',
   },
 ];

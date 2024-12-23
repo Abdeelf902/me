@@ -1,11 +1,11 @@
 const skills = {
   technical: [
-    { name: 'HTML5', level: 90 },
-    { name: 'CSS3', level: 85 },
-    { name: 'JavaScript', level: 80 },
-    { name: 'PHP', level: 75 },
-    { name: 'React.js', level: 70 },
-    { name: 'Angular', level: 65 },
+    { name: 'HTML5'},
+    { name: 'CSS3'},
+    { name: 'JavaScript' },
+    { name: 'PHP'},
+    { name: 'React.js' },
+    { name: 'Angular'},
   ],
   professional: [
     'Git',
@@ -42,12 +42,6 @@ export default function Skills() {
                 <div key={skill.name}>
                   <div className="flex justify-between mb-1">
                     <span className="text-gray-700">{skill.name}</span>
-                    <span className="text-gray-500">{skill.level}%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div
-                      className="bg-blue-600 h-2 rounded-full transition-all duration-500"
-                      style={{ width: `${skill.level}%` }}
                     />
                   </div>
                 </div>
