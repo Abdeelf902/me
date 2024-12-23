@@ -22,7 +22,7 @@ export default function Hero() {
         
         <div className="flex space-x-4 mb-8">
           <a
-            href="https://github.com/abderrahmaneelfarouah/"
+            href="https://github.com/abdeelfarouah/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-gray-900 text-white hover:bg-gray-700 transition-colors"
