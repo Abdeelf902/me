@@ -3,7 +3,7 @@ interface SkillBarProps {
   level: number;
 }
 
-export default function SkillBar({ name, level }: SkillBarProps) {
+export default function SkillBar({ name, }: SkillBarProps) {
   return (
     <div>
       <div className="flex justify-between mb-1">
