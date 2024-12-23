@@ -4,7 +4,7 @@ import { put } from "@vercel/blob";
 
 export default function Hero() {
   const [imageUrl, setImageUrl] = useState(
-    "https://via.placeholder.com/150" // Placeholder pour l'image
+    "https://via.placeholder.com/150https://ludogildq8s3djil.public.blob.vercel-storage.com/cv2025-Photoroom-aY1edINZOjOE6KQVyBZX3vzEjpXVoL.jpg" // Placeholder pour l'image
   );
 
   useEffect(() => {
