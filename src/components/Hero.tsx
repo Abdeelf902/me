@@ -6,7 +6,7 @@ const BLOB_READ_WRITE_TOKEN = "your_blob_read_write_token_here"; // Define the t
 
 export default function Hero() {
   const [imageUrl, setImageUrl] = useState(
-    "https://via.placeholder.com/150https://ludogildq8s3djil.public.blob.vercel-storage.com/cv2025-Photoroom-aY1edINZOjOE6KQVyBZX3vzEjpXVoL.jpg" // Placeholder pour l'image
+    "https://ludogildq8s3djil.public.blob.vercel-storage.com/cv2025-Photoroom-aY1edINZOjOE6KQVyBZX3vzEjpXVoL.jpg" // Placeholder pour l'image
   );
 
   useEffect(() => {
