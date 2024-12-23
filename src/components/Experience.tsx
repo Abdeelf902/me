@@ -10,7 +10,7 @@ const experiences = [
   },
   {
     title: "O'clock",
-    period: 'Septembre 2022 - Octobre 2022',
+    period: 'Mai 2022 - Octobre 2022',
     type: 'Formation',
     skills: [
       'Git', 'PHP', 'HTML5', 'JavaScript', 'Responsive Design',
