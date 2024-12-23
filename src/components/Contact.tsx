@@ -22,7 +22,7 @@ export default function Contact() {
             </a>
             
             <a
-              href="https://github.com/abderrahamaneelfarouah/"
+              href="https://github.com/abdeelfarouah/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
@@ -30,7 +30,7 @@ export default function Contact() {
               <Github size={32} className="text-gray-900 mb-4" />
               <h3 className="text-lg font-medium text-gray-900 mb-2">GitHub</h3>
               <p className="text-sm text-gray-600 text-center">
-                github.com/abderrahmaneelfarouah
+                github.com/abdeelfarouah
               </p>
             </a>
             
