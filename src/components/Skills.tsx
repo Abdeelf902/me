@@ -42,7 +42,6 @@ export default function Skills() {
                 <div key={skill.name}>
                   <div className="flex justify-between mb-1">
                     <span className="text-gray-700">{skill.name}</span>
-                    />
                   </div>
                 </div>
               ))}
