@@ -12,6 +12,7 @@ export default function Hero() {
       try {
         const result = await put("articles/blob.img", "Hello World!", {
           access: "public",
+          token: process.env.BLOB_READ_WRITE_TOKEN // Ajout du token
         });
         setImageUrl(result.url); // Stocke l'URL dans l'état
       } catch (error) {
