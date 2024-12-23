@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { put } from "@vercel/blob";
 
+const BLOB_READ_WRITE_TOKEN = "your_blob_read_write_token_here"; // Define the token
+
 export default function Hero() {
   const [imageUrl, setImageUrl] = useState(
     "https://via.placeholder.com/150https://ludogildq8s3djil.public.blob.vercel-storage.com/cv2025-Photoroom-aY1edINZOjOE6KQVyBZX3vzEjpXVoL.jpg" // Placeholder pour l'image
@@ -12,7 +14,7 @@ export default function Hero() {
       try {
         const result = await put("articles/blob.img", "Hello World!", {
           access: "public",
-          token: process.env.BLOB_READ_WRITE_TOKEN // Ajout du token
+          token: BLOB_READ_WRITE_TOKEN // Ajout du token
         });
         setImageUrl(result.url); // Stocke l'URL dans l'état
       } catch (error) {
