@@ -11,13 +11,13 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <a
-              href="mailto:abderrahmane.elfarouah@laposte.net"
+              href="mailto:a.elfarouahdev@outlook.fr"
               className="flex flex-col items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
             >
               <Mail size={32} className="text-red-600 mb-4" />
               <h3 className="text-lg font-medium text-gray-900 mb-2">Email</h3>
               <p className="text-sm text-gray-600 text-center">
-                abderrahmane.elfarouah@laposte.net
+                a.elfarouahdev@outlook.fr
               </p>
             </a>
             
