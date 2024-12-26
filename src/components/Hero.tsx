@@ -63,7 +63,7 @@ export default function Hero() {
             <Linkedin size={24} />
           </a>
           <a
-            href="mailto:abderrahmane.elfarouah@laposte.net"
+            href="mailto:a.elfarouahdev@outlook.fr"
             className="p-2 rounded-full bg-red-600 text-white hover:bg-red-700 transition-colors"
           >
             <Mail size={24} />
