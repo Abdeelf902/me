@@ -12,8 +12,15 @@ const projects = [
     title: 'Pokédex',
     description: 'Une application web présentant les 151 premiers Pokémon avec leurs caractéristiques.',
     link: 'https://abdeelfarouah.github.io/pokemon-discovery/',
-    github: 'https://github.com/abdeelfarouah/pokemon-discovery',
+    github: 'https://abdeelfarouah.github.io/pokemon-discovery/',
     image: 'https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?auto=format&fit=crop&q=80&w=800&h=500',
+  },
+  {
+    title: 'Neo Puzzle',
+    description: 'Un puzzle crée avec une image fanart par IA , développé avec JavaScript.',
+    link: 'https://abdeelfarouah.github.io/puzzle/',
+    github: 'https://abdeelfarouah.github.io/puzzle/',
+    image: 'https://github.com/abdeelfarouah/puzzle/blob/main/speedy-art.webp',
   },
 ];
 
