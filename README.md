@@ -14,6 +14,6 @@ Ce portfolio vise à fournir un aperçu rapide et visuel de mes qualifications e
 
 ## Contact
 
-📧 [abderrahmane.elfarouah@laposte.net](mailto:abderrahmane.elfarouah@laposte.net)  
+📧 [a.elfarouahdev@outlook.fr](mailto:a.elfarouahdev@outlook.fr)  
 
 Merci pour votre visite !
