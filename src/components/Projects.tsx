@@ -6,7 +6,7 @@ const projects = [
     description: 'Un jeu classique de pierre-papier-ciseaux développé avec JavaScript.',
     link: 'https://abdeelfarouah.github.io/chifoumi/',
     github: 'https://github.com/abdeelfarouah/chifoumi',
-    image: 'https://images.unsplash.com/photo-1612404730960-5c71577fca11?auto=format&fit=crop&q=80&w=800&h=500',
+    image: 'https://raw.githubusercontent.com/abdeelfarouah/chifoumi/refs/heads/main/screen%20game.png',
   },
   {
     title: 'Pokédex',
