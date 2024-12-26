@@ -19,8 +19,8 @@ const projects = [
     title: 'Neo Puzzle',
     description: 'Un puzzle crée avec une image fanart par IA , développé avec JavaScript.',
     link: 'https://abdeelfarouah.github.io/puzzle/',
-    github: 'https://abdeelfarouah.github.io/puzzle/',
-    image: 'https://github.com/abdeelfarouah/puzzle/blob/main/speedy-art.webp',
+    github: 'https://github.com/abdeelfarouah/puzzle/',
+    image: 'https://raw.githubusercontent.com/abdeelfarouah/puzzle/refs/heads/main/screen%20.png',
   },
 ];
 
