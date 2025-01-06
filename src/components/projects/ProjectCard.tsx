@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, link, github, image }: ProjectCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+    <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
       <img
         src={image}
         alt={title}
@@ -18,11 +18,11 @@ export default function ProjectCard({ title, description, link, github, image }:
       />
       
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
           {title}
         </h3>
         
-        <p className="text-gray-600 mb-4">
+        <p className="text-gray-600 dark:text-gray-300 mb-4">
           {description}
         </p>
         
@@ -31,7 +31,7 @@ export default function ProjectCard({ title, description, link, github, image }:
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-blue-600 hover:text-blue-800"
+            className="flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
           >
             <ExternalLink size={20} className="mr-1" />
             Demo
@@ -41,7 +41,7 @@ export default function ProjectCard({ title, description, link, github, image }:
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-gray-700 hover:text-gray-900"
+            className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
           >
             <Github size={20} className="mr-1" />
             Code
