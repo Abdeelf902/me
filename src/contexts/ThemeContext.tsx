@@ -1,13 +1,15 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext,useContext, useState, useEffect, ReactNode } from 'react';
 
-interface ThemeContextType {
+export type ThemeContextType = {
   isDark: boolean;
   toggleTheme: () => void;
-}
+};
 
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+// Créez le contexte avec un type explicite
+export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
+// Le composant ThemeProvider
+export function ThemeProvider({ children }: { children: ReactNode }) {
   const [isDark, setIsDark] = useState(() => {
     const saved = localStorage.getItem('theme');
     return saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -34,8 +36,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
 export function useTheme() {
   const context = useContext(ThemeContext);
-  if (context === undefined) {
-    throw new Error('useTheme must be used within a ThemeProvider');
+  if (!context) {
+    throw new Error('useTheme doit être utilisé à l\'intérieur de ThemeProvider');
   }
   return context;
 }

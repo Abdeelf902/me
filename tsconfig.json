@@ -1,4 +1,10 @@
 {
+  "compilerOptions": {
+    "baseUrl": "./src",  // Set baseUrl to ./src for absolute imports
+    "paths": {
+      "*": ["*"]
+    }
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

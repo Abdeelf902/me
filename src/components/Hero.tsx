@@ -1,7 +1,7 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
-import { PROFILE_IMAGE } from '../utils/images';
 import { SOCIAL_LINKS } from '../utils/constants';
 import Container from './shared/Container';
+import { PROFILE_IMAGE } from '../utils/images';
 
 export default function Hero() {
   return (
