@@ -1,6 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
+import { NAV_IMAGE } from '../utils/images';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold text-gray-900 dark:text-white">AEF</span>
+          <span className="absolute top-0 left-0 p-0">
+  <img src={NAV_IMAGE} className="w-16 h-16" alt="Logo" />
+</span>
           </div>
 
           <div className="hidden md:flex md:items-center md:space-x-4">
