@@ -40,6 +40,15 @@ export default function Hero() {
           >
             <Linkedin size={24} />
           </a>
+           <a
+            href="https://media.licdn.com/dms/image/v2/D4E1FAQGv9oIMkEKeCg/feedshare-document-images_800/B4EZQDQ_mTGYAg-/1/1735221575484?e=1737590400&v=beta&t=Eh1_cOFl4lGerv_nNi1GlNZmQVsIM61zWpbrJMy9bJg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-green-600 text-white hover:bg-green-700 transition-colors"
+            title="Télécharger mon CV"
+          >
+            <FileText size={24} />
+          </a>
           <a
             href={`mailto:${SOCIAL_LINKS.EMAIL}`}
             className="p-2 rounded-full bg-red-600 text-white hover:bg-red-700 transition-colors"
