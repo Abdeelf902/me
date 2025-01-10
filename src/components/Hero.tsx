@@ -32,7 +32,7 @@ export default function Hero() {
         pdf.addImage(img, 'JPEG', 0, 0, img.width, img.height);
 
         // Téléchargez le PDF
-        pdf.save('CV_Abderrahmane_El_Farouah_HD.pdf');
+        pdf.save('CV_Abderrahmane_El_Farouah_DEV.pdf');
         URL.revokeObjectURL(imageUrl);
       };
     } catch (error) {
