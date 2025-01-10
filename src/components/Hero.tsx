@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail,FileText } from 'lucide-react';
 import { SOCIAL_LINKS } from '../utils/constants';
 import Container from './shared/Container';
 import { PROFILE_IMAGE } from '../utils/images';
