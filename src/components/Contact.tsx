@@ -11,18 +11,18 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <a
-              href="mailto:abderrahmane.elfarouah@laposte.net"
+              href="mailto:A.elfarouahDEV@outlook.fr"
               className="flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
             >
               <Mail size={32} className="text-red-600 dark:text-red-500 mb-4" />
               <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">Email</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 text-center">
-                abderrahmane.elfarouah@laposte.net
+                A.elfarouahDEV@outlook.fr
               </p>
             </a>
             
             <a
-              href="https://github.com/Abdeelf902/"
+              href="https://github.com/abdeelfarouah/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
@@ -30,7 +30,7 @@ export default function Contact() {
               <Github size={32} className="text-gray-900 dark:text-white mb-4" />
               <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">GitHub</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 text-center">
-                github.com/Abdeelf902
+                github.com/abdeelfarouah
               </p>
             </a>
             
