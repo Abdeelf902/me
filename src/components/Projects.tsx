@@ -36,16 +36,23 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
-      <Container>
-        <SectionTitle>Projets</SectionTitle>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project) => (
-            <ProjectCard key={project.title} {...project} />
-          ))}
-        </div>
-      </Container>
-    </section>
+    <section id="projects" className="py- sm:py-12 md:py-2 bg-gray-50 dark:bg-gray-800">
+  <Container>
+    <SectionTitle>Projets</SectionTitle>
+    
+    <div className="grid grid-cols-4 gap-3 lg:gap-9 auto-rows-fr mt-8">
+      {projects.map((project) => (
+        <ProjectCard key={project.title} {...project} />
+      ))}
+
+      {/* Placeholder for future projects */}
+      <div className="col-span-1 bg-white/50 dark:bg-gray-900/50 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-700 p-8 flex items-center justify-center">
+        <p className="text-gray-500 dark:text-gray-400 text-center">
+          Projets à venir...
+        </p>
+      </div>
+    </div>
+  </Container>
+</section>  
   );
 }

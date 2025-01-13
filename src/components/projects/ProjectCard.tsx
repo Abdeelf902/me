@@ -10,43 +10,63 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, link, github, image }: ProjectCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-48 object-cover"
-      />
-      
-      <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-          {title}
-        </h3>
-        
-        <p className="text-gray-600 dark:text-gray-300 mb-4">
-          {description}
-        </p>
-        
-        <div className="flex space-x-4">
+    <div className="group bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1">
+      <div className="relative overflow-hidden aspect-video">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
+            className="p-2 bg-white/90 rounded-full text-gray-900 hover:bg-white transition-colors"
+            title="Voir la démo"
           >
-            <ExternalLink size={20} className="mr-1" />
-            Demo
+            <ExternalLink size={20} />
           </a>
-          
           <a
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            className="p-2 bg-white/90 rounded-full text-gray-900 hover:bg-white transition-colors"
+            title="Voir le code"
           >
-            <Github size={20} className="mr-1" />
-            Code
+            <Github size={20} />
           </a>
         </div>
+      </div>
+      
+      <div className="flex-1 p-6">
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+          {title}
+        </h3>
+        <p className="text-gray-600 dark:text-gray-300">
+          {description}
+        </p>
+      </div>
+      
+      <div className="px-6 pb-6 mt-auto flex justify-between items-center">
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center"
+        >
+          <span className="mr-2">Demo</span>
+          <ExternalLink size={16} />
+        </a>
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white flex items-center"
+        >
+          <span className="mr-2">Code</span>
+          <Github size={16} />
+        </a>
       </div>
     </div>
   );
