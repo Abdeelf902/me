@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: 'Neo Puzzle',
-    description: 'Un jeu simple revisité du puzzle .',
+    description: 'Un jeu simple revisité du puzzle.',
     link: 'https://abdeelfarouah.github.io/puzzle/',
     github: 'https://github.com/abdeelfarouah/puzzle',
     image: PROJECT_IMAGES.PUZZLE,
