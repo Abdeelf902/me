@@ -1,5 +1,4 @@
-import { Github, Linkedin, Mail, FileText, Download, ArrowDown } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 import { PROFILE_IMAGE } from '../utils/images';
 import { SOCIAL_LINKS } from '../utils/constants';
 import Container from './shared/Container';
@@ -9,7 +8,7 @@ export default function Hero() {
   const handleDownloadCV = useCallback(() => {
     const link = document.createElement('a');
     link.href = SOCIAL_LINKS.CV_URL;
-    link.download = 'abderrahmane-elfarouah.pdf';
+    link.download = 'abderrahmane-elfarouah_cv.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -17,7 +16,7 @@ export default function Hero() {
 
   return (
     <section className="h-full flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 p-4">
-      <Container className="flex flex-col items-center text-center space-y-8">
+      <Container className="flex flex-col justify-between text-center space-y-8">
         <div>
           <img
             src={PROFILE_IMAGE}
@@ -34,14 +33,9 @@ export default function Hero() {
           <p className="text-md sm:text-lg text-gray-600 dark:text-gray-300">
             Développeur Web & AS 400
           </p>
-
-          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
-            Passionné par le développement web et les systèmes legacy, 
-            je crée des solutions innovantes qui allient technologie moderne et fiabilité.
-          </p>
-        </motion.div>
+        </div>
         
-        <div className="flex space-x-4 sm:space-x-6">
+        <div className="flex justify-between w-full max-w-xs sm:max-w-sm">
           <a
             href={SOCIAL_LINKS.GITHUB}
             target="_blank"
@@ -74,22 +68,8 @@ export default function Hero() {
           >
             <Mail className="w-5 sm:w-[22px]" />
           </a>
-        </motion.div>
+        </div>
       </Container>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
-        >
-          <ArrowDown size={24} className="text-gray-400 dark:text-gray-500" />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }
