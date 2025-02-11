@@ -5,7 +5,7 @@ import ProjectCard from './projects/ProjectCard';
 
 const projects = [
   {
-    title: 'Snake game legacy ',
+    title: 'Snake game legacy',
     description: 'jeu regressif du serpent.',
     link: 'https://snakegamelegacy.netlify.app',
     github: 'https://github.com/abdeelfarouah/retro-snake-game',
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: 'Neo Puzzle',
-    description: 'Un jeu simple revisité du puzzle .',
+    description: 'Un jeu simple revisité du puzzle.',
     link: 'https://abdeelfarouah.github.io/puzzle/',
     github: 'https://github.com/abdeelfarouah/puzzle',
     image: PROJECT_IMAGES.PUZZLE,
@@ -36,23 +36,30 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py- sm:py-12 md:py-2 bg-gray-50 dark:bg-gray-800">
-  <Container>
-    <SectionTitle>Projets</SectionTitle>
-    
-    <div className="grid grid-cols-4 gap-3 lg:gap-9 auto-rows-fr mt-8">
-      {projects.map((project) => (
-        <ProjectCard key={project.title} {...project} />
-      ))}
-
-      {/* Placeholder for future projects */}
-      <div className="col-span-1 bg-white/50 dark:bg-gray-900/50 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-700 p-8 flex items-center justify-center">
-        <p className="text-gray-500 dark:text-gray-400 text-center">
-          Projets à venir...
-        </p>
-      </div>
-    </div>
-  </Container>
-</section>  
+    <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+      <Container>
+        <SectionTitle>Projets</SectionTitle>
+        <div className="flex flex-wrap justify-between gap-8 mt-8">
+            {projects.map((project, index) => (
+            <div key={index} className="w-full w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)]">
+              <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              link={project.link}
+              github={project.github}
+              image={project.image}
+              />
+            </div>
+            ))}
+          {/* Placeholder for future projects */}
+          <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white/50 dark:bg-gray-900/50 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-700 p-8 flex items-center justify-center">
+            <p className="text-gray-500 dark:text-gray-400 text-center">
+              Projets à venir...
+            </p>
+          </div>
+        </div>
+      </Container>
+    </section>
   );
 }
