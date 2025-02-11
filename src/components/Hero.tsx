@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText, Download, ArrowDown } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { PROFILE_IMAGE } from '../utils/images';
 import { SOCIAL_LINKS } from '../utils/constants';
 import Container from './shared/Container';
@@ -69,61 +70,101 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="h-full flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
       <Container className="flex flex-col items-center text-center space-y-8">
-        <div>
-          <img
-            src={PROFILE_IMAGE}
-            alt="Abderrahmane El Farouah"
-            className="w-36 h-36 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
-          />
-        </div>
+        <motion.div
+          initial={{ scale: 0.5, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="relative">
+            <img
+              src={PROFILE_IMAGE}
+              alt="Abderrahmane El Farouah"
+              className="w-36 h-36 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
+            />
+            <motion.div
+              className="absolute -bottom-2 -right-2 bg-green-500 w-5 h-5 rounded-full border-2 border-white"
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+            />
+          </div>
+        </motion.div>
         
-        <div className="space-y-3">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="space-y-3"
+        >
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
             Abderrahmane El Farouah
           </h1>
           
-          <p className="text-lg text-gray-600 dark:text-gray-300">
+          <p className="text-xl text-gray-600 dark:text-gray-300">
             Développeur Web & AS 400
           </p>
-        </div>
+
+          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+            Passionné par le développement web et les systèmes legacy, 
+            je crée des solutions innovantes qui allient technologie moderne et fiabilité.
+          </p>
+        </motion.div>
         
-        <div className="flex space-x-6">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="flex flex-wrap justify-center gap-4"
+        >
           <a
             href={SOCIAL_LINKS.GITHUB}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gray-900 dark:bg-gray-700 text-white hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
-            title="GitHub"
+            className="flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-gray-700 text-white rounded-full hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
           >
-            <Github size={22} />
+            <Github size={20} />
+            <span>GitHub</span>
           </a>
           <a
             href={SOCIAL_LINKS.LINKEDIN}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors"
-            title="LinkedIn"
+            className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
           >
-            <Linkedin size={22} />
+            <Linkedin size={20} />
+            <span>LinkedIn</span>
           </a>
           <button
             onClick={handleDownloadCV}
-            className="p-3 rounded-full bg-green-600 text-white hover:bg-green-700 transition-colors"
-            title="Télécharger mon CV"
+            className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors group"
           >
-            <FileText size={22} />
+            <Download size={20} className="group-hover:animate-bounce" />
+            <span>Télécharger CV</span>
           </button>
           <a
             href={`mailto:${SOCIAL_LINKS.EMAIL}`}
-            className="p-3 rounded-full bg-red-600 text-white hover:bg-red-700 transition-colors"
-            title="Email"
+            className="flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors"
           >
-            <Mail size={22} />
+            <Mail size={20} />
+            <span>Contact</span>
           </a>
-        </div>
+        </motion.div>
       </Container>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5 }}
+        >
+          <ArrowDown size={24} className="text-gray-400 dark:text-gray-500" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
