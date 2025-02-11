@@ -1,4 +1,3 @@
-# Portfolio d'Abderrahmane El Farouah
 
 Bienvenue sur mon portfolio professionnel. Ce site est conçu pour présenter mon parcours, mes compétences, et mes projets réalisés dans le domaine du développement web.
 

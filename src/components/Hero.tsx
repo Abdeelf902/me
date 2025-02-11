@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText, Download, ArrowDown } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { PROFILE_IMAGE } from '../utils/images';
 import { SOCIAL_LINKS } from '../utils/constants';
 import Container from './shared/Container';
@@ -33,7 +34,12 @@ export default function Hero() {
           <p className="text-md sm:text-lg text-gray-600 dark:text-gray-300">
             Développeur Web & AS 400
           </p>
-        </div>
+
+          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+            Passionné par le développement web et les systèmes legacy, 
+            je crée des solutions innovantes qui allient technologie moderne et fiabilité.
+          </p>
+        </motion.div>
         
         <div className="flex space-x-4 sm:space-x-6">
           <a
@@ -68,8 +74,22 @@ export default function Hero() {
           >
             <Mail className="w-5 sm:w-[22px]" />
           </a>
-        </div>
+        </motion.div>
       </Container>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5 }}
+        >
+          <ArrowDown size={24} className="text-gray-400 dark:text-gray-500" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
